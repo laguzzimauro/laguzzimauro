@@ -1,0 +1,88 @@
+/*Estilo de header*/
+.header{
+    background-color: $colorprincipal;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    nav{
+            background-color:$colorprincipal ;
+            width: 100%;
+            height: 100px;
+            display:flex; 
+            justify-content: space-around;
+            align-items: center;    
+
+            picture{
+                height: auto;
+                width: auto;
+                    
+                    .header__logo-entersalud
+                        {
+                            height: 80px;
+                            width: auto; 
+                            &:hover{
+                                transform: scale(2,2);}    
+                        }
+            }
+            #menu{  margin: 0;
+                    padding: 0;
+                    li{
+                    position:relative;
+                    float:left;
+                    margin:5px;
+                    padding:0;
+                    width:120px;
+                    text-align: center;
+                    list-style-type: none;
+                    text-decoration: none;
+                    &:hover{
+                    background: $colorhover;
+                    ul{
+                        display:block;
+                        }
+                    }
+                    a{
+                    text-decoration: none;
+                    text-align: center;
+                    color:$colorterciario;}
+                    }
+                    ul{
+                    display: none;
+                    position:fixed;
+                    text-decoration: none;
+                    list-style-type: none;
+                    text-align: center;
+                    li{
+                        margin:0;
+                        margin-top:5px;
+                        padding-top: 5px;
+                        padding-bottom:5px;
+                        text-align:center;
+                        a{
+                        font-family: Arial, Helvetica, sans-serif;
+                        color:$colorwhite;
+                        font-size: 8px;
+                        text-decoration:none;   
+                        }
+                    }
+                    }
+                    .menu__menu-individual{
+                        display:block;
+                        color:#fff;
+                        text-decoration:none;
+                        font-weight:400;
+                        font-size:13px;
+                        font-family:'EB Garamond', serif 600;
+                        padding:10px;
+                        text-transform:uppercase;
+                        letter-spacing:1px;
+                        .menu__menu-individual__submenu-productos{
+                            background-color: $colorprincipal;
+                                                                                }
+                     }
+                }
+                    }
+                
+                }

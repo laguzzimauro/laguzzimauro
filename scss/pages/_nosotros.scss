@@ -1,0 +1,64 @@
+/* nosotros.html con grid*/
+.nosotros{
+      margin-top: 20px;
+      display: grid;
+      grid-template-areas:
+      "imagen nosotros nosotros"
+      "imagen nosotros-clientes nosotros-clientes-1"
+      "imagen nosotros-clientes-2 nosotros-clientes-3";
+      grid-column: auto;
+      grid-row: auto;
+      gap: 2rem; 
+      border-color:$colorborder;
+      background-color:$coloroctavo ;
+      Border: solid 1px;
+      justify-content: center;
+      align-items: center;   
+      text-align: center;
+      .nosotros__imagen-nosotros{
+         grid-area: imagen;
+         background-size: cover;
+      }
+      .nosotros__nosotros-uno{
+         grid-area: nosotros;
+         h2{font-style: bold;
+         font-size: 20px;
+         background-color: rgba(255, 255, 255, 0.671);}
+         article{font-style: normal;
+         font-size: 18px;}
+      }
+      .nosotros__nosotros-clientes{
+         grid-area: nosotros-clientes;
+         h4{font-style: bold;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.671);}
+         p{font-style: normal;
+           font-size: 16px;} 
+      }
+      .nosotros__nosotros-clientes-1{
+         grid-area: nosotros-clientes-1;
+         h4{font-style: bold;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.671);}
+         p{font-style: normal;
+            font-size: 16px;}
+      }
+      .nosotros__nosotros-clientes-2{
+         grid-area: nosotros-clientes-2;
+         h4{font-style: bold;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.671);}
+         p{font-style: normal;
+            font-size: 16px;}
+      }
+      .nosotros__nosotros-clientes-3{
+         grid-area: nosotros-clientes-3;
+         h4{font-style: bold;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.671);
+         }
+         p{font-style: normal;
+            font-size: 16px;}
+      }
+}
+

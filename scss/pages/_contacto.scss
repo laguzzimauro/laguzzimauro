@@ -1,0 +1,30 @@
+main{
+    .nosotros{  color:$colorboton;
+                font-weight: bold;
+                font-size: 16px; 
+                text-align: center;
+                padding-top: 25px;
+                
+
+            }
+
+    article{    color: $colorarticle;
+                font-size: 15px;
+                text-align: center;
+                background-color: $coloroctavo;
+                font-style: bold;}
+
+    form{   background-image: url('../Public/multimedia enter salud/Totem full/1 TEMPER.jpg');
+        background-size: cover ;
+            text-align: center  ;
+            color: $colorseptimo;
+            font-size: 16px;
+            font-style: bold;
+            text-decoration: none;
+
+            h4{color:$colorblack;}
+
+            p{color: $colorparrafo;}
+        }
+
+    }

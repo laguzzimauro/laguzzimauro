@@ -1,0 +1,136 @@
+/* clientes html con grids*/
+
+main{
+    .seccion-uno-clientes{
+        margin-top: 20px;
+        width: 100% vw;
+        background-color: $coloroctavo;
+        display: grid;
+        grid-template-areas:
+        "nuestros-clientes nuestros-clientes nuestros-clientes nuestros-clientes"
+        "cliente-1 cliente-2  cliente-3 cliente-4" ;
+        gap: 4rem;
+        grid-column: auto;
+        grid-row: auto;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        background-image: url('../Public/multimedia enter salud/Totem full/6 TEMPER.jpg');
+        background-size:cover;
+        .seccion-uno-clientes__nuestros-clientes{
+            grid-area: nuestros-clientes;
+            h2{font-style: bold;
+                color:$colorseptimo;
+            background-color: rgba(255, 255, 255, 0.836);}
+            h3{font-style: bold;
+                color:$colorblack;
+                background-color: rgba(255, 255, 255, 0.671);
+            }
+            p{font-style: normal;
+                color:$colorblack;
+                background-color: rgba(255, 255, 255, 0.671);}
+            
+        }
+        .seccion-uno-clientes__clientes-1{
+            grid-area: cliente-1;
+            h4{font-style: bold;
+               color:$colorblack;
+               background-color: rgba(255, 255, 255, 0.671);
+            }
+            p{font-style: normal;
+            color:$colorblack;
+            background-color: rgba(255, 255, 255, 0.671);}
+        }
+
+        .seccion-uno-clientes__clientes-2{
+            grid-area: cliente-2;
+            h4{font-style: bold;
+            color:$colorblack;
+            background-color: rgba(255, 255, 255, 0.671);}
+            p{font-style: normal;
+                color:$colorblack;
+                background-color: rgba(255, 255, 255, 0.671);}   
+        }
+
+        .seccion-uno-clientes__clientes-3{
+            grid-area: cliente-3;
+            h4{font-style: bold;
+             color:$colorblack;
+             background-color: rgba(255, 255, 255, 0.671);}
+            p{font-style: normal;
+                color:$colorblack;
+                background-color: rgba(255, 255, 255, 0.671);} 
+        }
+
+        .seccion-uno-clientes__clientes-4{
+            grid-area: cliente-4;
+            h4{font-style: bold;
+            color:$colorblack;
+            background-color: rgba(255, 255, 255, 0.671);}
+            p{font-style: normal;
+                color:$colorblack;
+                background-color: rgba(255, 255, 255, 0.671);} 
+        }
+    }
+}
+
+
+
+// // ejercicios de for,each,maps,extends,mixins
+// // for
+// @for $clientes from 1 through 4{
+//     .seccion-uno-clientes__clientes-#{$clientes}{
+//         h4{font-style: bold;}
+//         p{font-style: normal;
+//         color: $colorblack;}
+//     }
+// }
+//     // each
+
+// @each $cliente in seccion-uno-clientes__clientes-1,seccion-uno-clientes__clientes-2, seccion-uno-clientes__clientes-3,seccion-uno-clientes__clientes-4 {
+//     .seccion-uno-clientes__clientes-#{$cliente}{
+//         background-color: red;
+//     }
+// }
+
+// // maps
+//  $seccion-uno-clientes__clientes:(seccion-uno-clientes__clientes-1:red,seccion-uno-clientes__clientes-2:blue, seccion-uno-clientes__clientes-3:white,seccion-uno-clientes__clientes-4: black);
+
+//  @each $cliente, $color in $seccion-uno-clientes__clientes {
+//      .seccion-uno-clientes__clientes-#{$cliente}{
+//          background-color: $color;
+//      }
+//  }
+
+// //  extend
+//   .seccion-uno-clientes__clientes-1{
+//           grid-area: cliente-1;
+//           h4{font-style: bold;}
+//           p{font-style: normal;}
+//         }
+
+// .seccion-uno-clientes__clientes-2{
+//     grid-area: cliente-2;
+//     @extend .seccion-uno-clientes__clientes-1;
+//     text-align: center;
+//     }
+
+// .seccion-uno-clientes__clientes-3{
+//     grid-area: cliente-3;
+//     @extend .seccion-uno-clientes__clientes-2;
+//     color:salmon;
+//     border-color: sandybrown;
+//  }
+// //  mixin
+// @mixin clientes ($bold,$normal,$center){
+//     font-style: $bold;
+//     font-family: $normal;
+//     text-align: $center
+// }
+// .seccion-uno-clientes__clientes-1{
+//     @include clientes (bold,normal,center)
+// }
+
+// .seccion-uno-clientes__clientes-2{
+//     @include clientes (normal,normal, left)
+// }
