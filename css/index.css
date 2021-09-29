@@ -215,7 +215,7 @@ main article {
   font-style: bold; }
 
 main form {
-  background-image: url("../Public/multimedia enter salud/Totem full/1 TEMPER.jpg");
+  background-image: url("../Public/multimedia-entersalud/totem-full/temper1.jpg");
   background-size: cover;
   text-align: center;
   color: #2892D7;
@@ -233,14 +233,15 @@ main .seccion-uno-clientes {
   width: 100% vw;
   background-color: #93ACB5;
   display: grid;
-  grid-template-areas: "nuestros-clientes nuestros-clientes nuestros-clientes nuestros-clientes" "cliente-1 cliente-2  cliente-3 cliente-4";
+  grid-template-areas: "nuestros-clientes nuestros-clientes nuestros-clientes nuestros-clientes"
+ "cliente-1 cliente-2  cliente-3 cliente-4";
   gap: 4rem;
   grid-column: auto;
   grid-row: auto;
   justify-content: center;
   text-align: center;
   font-size: 16px;
-  background-image: url("../Public/multimedia enter salud/Totem full/6 TEMPER.jpg");
+  background-image: url("../Public/multimedia-entersalud/totem-full/temper6.jpg");
   background-size: cover; }
   main .seccion-uno-clientes .seccion-uno-clientes__nuestros-clientes {
     grid-area: nuestros-clientes; }
@@ -301,7 +302,9 @@ main .seccion-uno-clientes {
 .nosotros {
   margin-top: 20px;
   display: grid;
-  grid-template-areas: "imagen nosotros nosotros" "imagen nosotros-clientes nosotros-clientes-1" "imagen nosotros-clientes-2 nosotros-clientes-3";
+  grid-template-areas: "imagen nosotros nosotros"
+ "imagen nosotros-clientes nosotros-clientes-1"
+ "imagen nosotros-clientes-2 nosotros-clientes-3";
   grid-column: auto;
   grid-row: auto;
   gap: 2rem;
