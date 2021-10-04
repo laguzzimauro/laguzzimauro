@@ -23,40 +23,44 @@ html {
 /*ESTILO DE FOOTER*/
 #footer {
   width: 100%;
-  height: 50px;
-  background-color: #2892D7;
-  display: flex; }
-  #footer .nav-footer ul {
-    margin-top: 12px; }
-    #footer .nav-footer ul li {
-      display: inline;
-      list-style-type: none;
-      align-items: center;
-      justify-content: center;
-      text-align: center; }
-      #footer .nav-footer ul li a {
-        text-decoration: none;
-        padding: 3px;
-        color: white;
-        font-size: 12px;
-        font-family: 'EB Garamond';
-        margin-left: 130px;
-        background-color: #2892D7;
-        font-family: 'EB Garamond';
-        font-style: bold; }
-        #footer .nav-footer ul li a:hover {
-          background-color: #5d9427; }
+  height: 70px;
+  background-color: #2892D7; }
+  #footer .nav-footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center; }
+    #footer .nav-footer ul {
+      width: 100%;
+      padding: 0px 60px;
+      display: flex;
+      justify-content: space-between; }
+      #footer .nav-footer ul li {
+        display: inline;
+        list-style-type: none;
+        align-items: center; }
+        #footer .nav-footer ul li a {
+          text-decoration: none;
+          padding: 3px;
+          color: white;
+          font-size: 16px;
+          font-family: 'EB Garamond';
+          background-color: #2892D7;
+          font-family: 'EB Garamond';
+          font-style: bold; }
+          #footer .nav-footer ul li a:hover {
+            background-color: #5d9427; }
 
 /*Estilo de header*/
 .header {
-  background-color: #96C5F7;
+  background-color: rgba(0, 104, 173, 0.918);
   height: 80px;
   width: 100%;
   top: 0;
   left: 0;
   display: flex; }
   .header nav {
-    background-color: #96C5F7;
+    background-color: rgba(0, 104, 173, 0.918);
     width: 100%;
     height: 100px;
     display: flex;
@@ -104,6 +108,7 @@ html {
           text-align: center; }
           .header nav #menu ul li a {
             font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
             color: white;
             font-size: 8px;
             text-decoration: none; }
@@ -118,33 +123,43 @@ html {
         text-transform: uppercase;
         letter-spacing: 1px; }
         .header nav #menu .menu__menu-individual .menu__menu-individual__submenu-productos {
-          background-color: #96C5F7; }
+          background-color: rgba(0, 104, 173, 0.918); }
 
 /*pages*/
 /*ESTILOS DE MAIN*/
 /* ESTILOS DE SECCION CON FLEX*/
 /*seccion uno con bootstrap*/
+body {
+  background-color: #f5f5f5;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23b7e6f5' fill-opacity='0.38' fill-rule='evenodd'/%3E%3C/svg%3E"); }
+
 #carouselExampleDark {
   width: 100%;
   height: 50%;
-  margin-top: 20px; }
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 8px #888888; }
   #carouselExampleDark h5 {
-    color: #2892D7;
+    color: cornsilk;
     font-size: 22px;
     font-style: bold;
-    background-color: rgba(255, 255, 255, 0.616); }
+    background-color: rgba(0, 104, 173, 0.918);
+    box-shadow: 10px 10px 8px #888888; }
   #carouselExampleDark p {
-    color: teal;
+    color: ivory;
     font-size: 18px;
     font-family: bold;
     border-color: black 20px;
-    background-color: rgba(255, 255, 255, 0.616); }
+    background-color: rgba(0, 104, 173, 0.918);
+    box-shadow: 10px 10px 8px #888888; }
 
 /*seccion dos*/
-.card-group .card .card-img-top {
-  width: 100%;
-  height: 100%;
-  background-size: cover; }
+.card-group .card {
+  margin-bottom: 50px; }
+  .card-group .card .card-img-top {
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
 
 .card-group .card-body {
   background-color: teal; }
@@ -164,7 +179,8 @@ html {
 .section-tres {
   width: 100%;
   height: 100%;
-  background-color: #93ACB5; }
+  background-color: #93ACB5;
+  margin-bottom: 50px; }
   .section-tres .videos-index .videos {
     text-align: center;
     font-size: 16px;
@@ -215,7 +231,7 @@ main article {
   font-style: bold; }
 
 main form {
-  background-image: url("../Public/multimedia-entersalud/totem-full/temper1.jpg");
+  background-image: url "../Public/multimedia-entersalud/totem-full/temper1.jpg";
   background-size: cover;
   text-align: center;
   color: #2892D7;
@@ -233,8 +249,7 @@ main .seccion-uno-clientes {
   width: 100% vw;
   background-color: #93ACB5;
   display: grid;
-  grid-template-areas: "nuestros-clientes nuestros-clientes nuestros-clientes nuestros-clientes"
- "cliente-1 cliente-2  cliente-3 cliente-4";
+  grid-template-areas: "nuestros-clientes nuestros-clientes nuestros-clientes nuestros-clientes" "cliente-1 cliente-2  cliente-3 cliente-4";
   gap: 4rem;
   grid-column: auto;
   grid-row: auto;
@@ -302,9 +317,7 @@ main .seccion-uno-clientes {
 .nosotros {
   margin-top: 20px;
   display: grid;
-  grid-template-areas: "imagen nosotros nosotros"
- "imagen nosotros-clientes nosotros-clientes-1"
- "imagen nosotros-clientes-2 nosotros-clientes-3";
+  grid-template-areas: "imagen nosotros nosotros" "imagen nosotros-clientes nosotros-clientes-1" "imagen nosotros-clientes-2 nosotros-clientes-3";
   grid-column: auto;
   grid-row: auto;
   gap: 2rem;
