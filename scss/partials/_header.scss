@@ -9,7 +9,7 @@
     nav{
             background-color:$colorprincipal;
             width: 100%;
-            height: 100px;
+            // height: 100px;
             display:flex; 
             justify-content: space-around;
             align-items: center;    
@@ -22,9 +22,8 @@
                         {
                             height: 80px;
                             width: auto; 
-                            &:hover{
-                                transform: scale(2,2);}    
-                        }
+                        }    
+                        
             }
             #menu{  margin: 0;
                     padding: 0;
@@ -81,9 +80,19 @@
                         letter-spacing:1px;
                         .menu__menu-individual__submenu-productos{
                             background-color: $colorprincipal;
-                                                                                }
-                     }
-                }
+                        }
                     }
-                
                 }
+        }                
+}
+.redes {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    transition: .3s ease-in-out;
+    &:hover{
+        transform: scale(1.2);
+            }
+}
+    
+    

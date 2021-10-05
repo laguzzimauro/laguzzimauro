@@ -10,7 +10,7 @@ body{
 #carouselExampleDark{
     width: 100%;
     height: 50%;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px; 
     box-shadow: 10px 10px 8px #888888;
     h5{
@@ -29,34 +29,40 @@ body{
     box-shadow: 10px 10px 8px #888888;
     }
 }
+img.d-block{
+    width: 100%;
+    height: 550px;
+}
 /*seccion dos*/
 .card-group{
             .card{
                 margin-bottom: 50px;
+                box-shadow: 10px 10px 8px #888888;
             .card-img-top{
                 width: 100%;
                 height: 100%;
-                background-size: cover;
+                background-size: cover;  
             }
-
                 }
             .card-body{
-                background-color: $colorborder;
+                background-color: $colorseptimo;
+                box-shadow: 10px 10px 8px #888888;
                 .card-text{
                 color: $colorterciario;
                 font-family: bold;
-                font-size: 14px;
+                font-size: 20px;
                 text-align: center;
                 }
                 .card-title{
-                    color: $colorborder;
+                    color: $colorblack;
                     font-family: bold;
-                    font-size: 16px;
+                    font-size: 24px;
                     text-align: center;
                     font-style: bold;
-                    background-color: rgba(255, 235, 205, 0.747);
-
-            }
+                    &:hover{
+                        transform: scale(1.2);
+                            }
+                }
             }
 }
 .section-tres{
@@ -64,6 +70,7 @@ body{
     height: 100%;
     background-color: $coloroctavo;
     margin-bottom: 50px;
+    box-shadow: 10px 10px 8px #888888;
     .videos-index{
     
         .videos{
@@ -71,14 +78,18 @@ body{
             font-size: 16px;
             color: $colorblack;
             h3{
+            font-size: 24px;
+            }
+            p{
             font-size: 20px;
+            color: $colorterciario;
+            font-style: bold;
             }
 
         }
     }
 }
 
-/*animacion solamente para el desafio*/
 .section-tres .videos li h3{
     text-align: center;
     animation-name: un-efecto;
@@ -90,12 +101,12 @@ body{
 
 @keyframes un-efecto 
 {
-    0% { width: 50%; }
-    25% { width: 70%; }
+    0% { width: 60%; }
+    25% { width: 80%; }
     50% { width: 90%;
-    background-color:rgb(110, 110, 255); }
+    background-color:rgb(0, 0, 255); }
     75% { width: 100%;}
-    100% { width: 50%;
+    100% { width: 80%;
     background-color:rgb(174, 191, 250);}
 }
 

@@ -1,30 +1,37 @@
 main{
+    margin-bottom: 20 px;
     .nosotros{  color:$colorboton;
                 font-weight: bold;
-                font-size: 16px; 
+                font-size: 24px; 
                 text-align: center;
                 padding-top: 25px;
-                
-
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
 
     article{    color: $colorarticle;
-                font-size: 15px;
+                font-size: 20px;
                 text-align: center;
-                background-color: $coloroctavo;
-                font-style: bold;}
+                background-color: $colorseptimo;
+                font-style: bold;
+                margin-bottom: 20px;}
 
-    form{   background-image: url ('../Public/multimedia-entersalud/totem-full/temper1.jpg');
-        background-size: cover ;
+    form{   background-image: url('../Public/multimedia-entersalud/totem-full/temper1.jpg');
+            background-size: cover ;
             text-align: center  ;
             color: $colorseptimo;
             font-size: 16px;
             font-style: bold;
             text-decoration: none;
 
-            h4{color:$colorblack;}
+            h4{color:$colorblack;
+            margin-top: 10px;
+            margin-bottom: 10px;}
 
-            p{color: $colorparrafo;}
+            p{color: $colorparrafo;
+              margin-top: 10px;
+              margin-bottom: 10px}
         }
 
     }

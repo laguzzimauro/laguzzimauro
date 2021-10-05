@@ -6,11 +6,13 @@
         width: 100%;
         height: 500px;
         background-size:cover;
+    
     }
     .titulos-seccion-uno{
         text-align: center;
         font-style: bold;
         background-color: $colorseptimo;
+        margin-top: 20px;
         h2{
             font-size:16px ;
             color: $colorterciario;
@@ -30,12 +32,14 @@
             list-style-type:none;
             font-size: 14px;
             color:$colorparrafo;
-            background-color: rgba(255, 235, 205, 0.747); ;
+            background-color: rgba(255, 235, 205, 0.747); 
+            margin-top: 20px;
         }
     }
 }
 
 .section-dos{
+    margin-top: 20px;
     .col{
         .card{
             .card-img-top{
@@ -43,8 +47,7 @@
                 height: 100%;
                 max-width: 100%;
                 max-height: 550px;
-                background-size: cover;
-                
+                background-size: cover;  
             }
             .card-body{
                 background-color:$colorseptimo;
@@ -62,22 +65,28 @@
                 }
             }
         }
-
     }
 } 
 .section-tres{
+    margin-top: 20px;
+    box-shadow: 10px 10px 8px #888888;
     .videos-index{
                 width: 100%;
                 padding-bottom: 40px;
                 h3{
-                font-size: 16px;
+                margin-top: 10px;
+                font-size: 26px;
                 color:$colorarticle;
                 font-style: bold;
-                text-align: center;
+                text-align: center;       
+                &:hover{
+                    transform: scale(1.2);
+                        }
                 }
                 p{
-                font-size: 14px;
-                color:$colorarticle;
+                margin-top: 10px;
+                font-size: 18px;
+                color:$colorquinto;
                 font-style: bold;
                 text-align: center;
                 }
