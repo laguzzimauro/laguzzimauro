@@ -24,78 +24,18 @@ html {
 /*partials*/
 /*ESTILO DE FOOTER*/
 /*ESTILO DE FOOTER*/
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 104, 173, 0.918);
+}
+
 #footer {
-  width: 100%;
-  height: 70px;
-  background-color: rgba(0, 104, 173, 0.918);
-}
-
-#footer .nav-footer {
-  width: 100%;
-  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(0, 104, 173, 0.918);
-}
-
-#footer .nav-footer ul {
-  width: 100%;
-  padding: 0px 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: rgba(0, 104, 173, 0.918);
-}
-
-#footer .nav-footer ul li {
-  display: inline;
-  list-style-type: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#footer .nav-footer ul li a {
-  text-decoration: none;
-  padding: 3px;
-  color: white;
-  font-size: 16px;
-  font-family: 'EB Garamond';
-  background-color: rgba(0, 104, 173, 0.918);
-  font-style: bold;
-}
-
-#footer .nav-footer ul li a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  background-color: #5d9427;
-}
-
-/*Estilo de header*/
-.header {
-  background-color: rgba(0, 104, 173, 0.918);
-  height: 80px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header nav {
-  background-color: rgba(0, 104, 173, 0.918);
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -103,97 +43,87 @@ html {
           align-items: center;
 }
 
-.header nav picture {
-  height: auto;
-  width: auto;
-}
-
-.header nav picture .header__logo-entersalud {
-  height: 80px;
-  width: auto;
-}
-
-.header nav #menu {
-  margin: 0;
-  padding: 0;
-}
-
-.header nav #menu li {
-  position: relative;
-  float: left;
-  margin: 5px;
-  padding: 0;
-  width: 120px;
-  text-align: center;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-.header nav #menu li:hover {
-  background: #5d9427;
-}
-
-.header nav #menu li:hover ul {
-  display: block;
-}
-
-.header nav #menu li a {
-  text-decoration: none;
-  text-align: center;
-  color: ivory;
-}
-
-.header nav #menu ul {
-  display: none;
-  position: fixed;
-  text-decoration: none;
-  list-style-type: none;
-  text-align: center;
-}
-
-.header nav #menu ul li {
-  margin: 0;
-  margin-top: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
-}
-
-.header nav #menu ul li a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: bold;
+#footer .footer__contacto-footer {
+  font-size: 24px;
   color: white;
-  font-size: 8px;
-  text-decoration: none;
+  text-align: center;
+  margin-top: 5px;
 }
 
-.header nav #menu .menu__menu-individual {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 13px;
-  font-family: 'EB Garamond', serif 600;
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+#footer .footer__contacto-datos {
+  font-size: 24px;
+  color: white;
 }
 
-.header nav #menu .menu__menu-individual .menu__menu-individual__submenu-productos {
-  background-color: rgba(0, 104, 173, 0.918);
+#footer .footer__div-redes {
+  width: auto;
 }
 
-.redes {
-  width: 35px;
-  height: 35px;
+#footer .footer__div-redes .footer__redes {
+  width: 45px;
+  height: 45px;
   border-radius: 100%;
+  -webkit-box-shadow: 2px 2px 2px #fffcfc;
+          box-shadow: 2px 2px 2px #fffcfc;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
-.redes:hover {
+#footer .footer__div-redes .footer__redes:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+header {
+  height: auto;
+  width: 100%;
+}
+
+#head {
+  background-color: rgba(0, 104, 173, 0.918);
+  padding-left: 20%;
+}
+
+.header__logo-entersalud {
+  height: 80px;
+  width: auto;
+  margin-right: 10%;
+}
+
+.header__logo-entersalud:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ffffff;
+}
+
+#menu__menu-individual {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding: 0 50px;
+}
+
+#menu__menu-individual:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #2c2c2c;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+#desplegable {
+  background-color: rgba(0, 104, 173, 0.918);
+}
+
+#menu__menu-individual__submenu-productos {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#menu__menu-individual__submenu-productos:hover {
+  color: #2c2c2c;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 /* MEDIA QUERIES responsive*/
@@ -209,7 +139,7 @@ body {
 #carouselExampleDark {
   width: 100%;
   height: 50%;
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 50px;
   -webkit-box-shadow: 10px 10px 8px #888888;
           box-shadow: 10px 10px 8px #888888;
@@ -417,12 +347,13 @@ main {
 }
 
 main .seccion-uno-clientes {
+  background-image: url("../Public/multimedia-entersalud/totem-full/temper6.jpg");
+  background-size: cover;
   margin-top: 20px;
-  width: 100% vw;
-  background-color: #93ACB5;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nuestros-clientes nuestros-clientes nuestros-clientes nuestros-clientes" "cliente-1 cliente-2  cliente-3 cliente-4";
+      grid-template-areas: "nuestros-clientes"  "nuestros-clientes" "cliente-1" "cliente-2 " "cliente-3" "cliente-4";
   gap: 4rem;
   grid-column: auto;
   grid-row: auto;
@@ -431,14 +362,12 @@ main .seccion-uno-clientes {
           justify-content: center;
   text-align: center;
   font-size: 16px;
-  background-image: url("../Public/multimedia-entersalud/totem-full/temper6.jpg");
-  background-size: cover;
 }
 
 main .seccion-uno-clientes .seccion-uno-clientes__nuestros-clientes {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: nuestros-clientes;
 }
 
@@ -464,7 +393,7 @@ main .seccion-uno-clientes .seccion-uno-clientes__nuestros-clientes p {
 }
 
 main .seccion-uno-clientes .seccion-uno-clientes__clientes-1 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: cliente-1;
 }
@@ -485,8 +414,8 @@ main .seccion-uno-clientes .seccion-uno-clientes__clientes-1 p {
 }
 
 main .seccion-uno-clientes .seccion-uno-clientes__clientes-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: cliente-2;
 }
 
@@ -506,8 +435,8 @@ main .seccion-uno-clientes .seccion-uno-clientes__clientes-2 p {
 }
 
 main .seccion-uno-clientes .seccion-uno-clientes__clientes-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: cliente-3;
 }
 
@@ -527,8 +456,8 @@ main .seccion-uno-clientes .seccion-uno-clientes__clientes-3 p {
 }
 
 main .seccion-uno-clientes .seccion-uno-clientes__clientes-4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
   grid-area: cliente-4;
 }
 
@@ -664,6 +593,27 @@ main .seccion-uno-clientes .seccion-uno-clientes__clientes-4 p {
 .nosotros .nosotros__nosotros-clientes-3 p {
   font-style: normal;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 780px) {
+  .nosotros {
+        grid-template-areas: "imagen nosotros nosotros" "imagen nosotros-clientes nosotros-clientes-1" "imagen nosotros-clientes-2 nosotros-clientes-3";
+  }
+  .nosotros .nosotros__imagen-nosotros {
+    margin: auto;
+    width: 30%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .nosotros {
+        grid-template-areas: "nosotros nosotros" "nosotros-clientes nosotros-clientes-1" "nosotros-clientes-2 nosotros-clientes-3" "imagen imagen";
+  }
+  .nosotros .nosotros__imagen-nosotros {
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
 
 .section-uno {

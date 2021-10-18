@@ -14,24 +14,39 @@
 </head>
 <body>
   <!-- menu de navegacion -->
-  <header class="header" class= "container-fluid">
-    <nav>
-      <picture><img  class="header__logo-entersalud" src="Public/multimedia-entersalud/logo.png" alt="logo de la empresa"></picture>
-      <ul id="menu"> 
-        <li class="menu__menu-individual"><a href="paginas/productos.html">Productos</a>
-          <ul class="menu__menu-individual__submenu-productos"> 
-            <li><a href="paginas/productos.html"> Totem clasico</a></li>
-            <li><a href="paginas/productos.html"> Totem full</a></li>
-            <li><a href="paginas/productos.html"> Totem infantil</a></li>
-            <li><a href="paginas/productos.html"> Totem temperatura</a></li>
+  <header id="cabecera">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id= "navegacion">
+      <div class="container-fluid" id="head">
+        <a class="navbar-brand" href="index.html"><picture><img  class="header__logo-entersalud" src="Public/multimedia-entersalud/logo.png" alt="logo de la empresa"></picture></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+            <li class= "nav-item dropdown" >
+              <a class="nav-link dropdown-toggle" id="menu__menu-individual" href="paginas/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu"  aria-labelledby="navbarDropdown" id="desplegable">
+                <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="paginas/productos.html">Totem Clasico</a></li>
+                <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="paginas/productos.html">Totem Full</a></li>
+                <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="paginas/productos.html">Totem Infantil</a></li>
+                <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="paginas/productos.html">Totem Temperatura</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+              id="menu__menu-individual" href="paginas/nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="menu__menu-individual" href="paginas/clientes.html">CLIENTES</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" id="menu__menu-individual" href="paginas/contacto.html">CONTACTO</a>
+            </li>
           </ul>
-        </li>
-        <li class="menu__menu-individual"><a href="paginas/nosotros.html">Nosotros</a></li>
-        <li class="menu__menu-individual"><a href="paginas/clientes.html">Clientes</a></li>
-        <li class="menu__menu-individual"><a href="paginas/contacto.html">Contacto</a></li>
-        <li class="menu__menu-individual" ><a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="./Public/multimedia-entersalud/redes/icono-facebook.png" alt="facebook" class="redes"></a></li>
-        <li class="menu__menu-individual"><a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="./Public/multimedia-entersalud/redes/icono-ig.png" alt="instagram" class="redes"></a></li>
-      </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <!-- Secciones principales -->
@@ -45,24 +60,24 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="Public/multimedia-entersalud/totem-full/temper1.jpg" class="d-block w-100" alt="Producto-uno">
+          <img src="Public/multimedia-entersalud/totem-full/temper1.webp" class="d-block w-100" alt="Producto-uno">
           <div class="carousel-caption d-none d-md-block">
             <h5>Totem Full</h5>
-            <p>Dispenser automatico de alcohol con sensor de temperatura</p>
+            <p>Dispenser automático de alcohol con sensor de temperatura</p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="Public/multimedia-entersalud/totem-clasico/totem-clasico3.jpg" class="d-block w-100" alt="Producto-dos">
+          <img src="Public/multimedia-entersalud/totem-clasico/totem-clasico3.webp" class="d-block w-100" alt="Producto-dos">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Totem Clasico</h5>
-            <p>Dispenser automatico de alcohol</p>
+            <h5>Totem Clásico</h5>
+            <p>Dispenser automático de alcohol</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Public/multimedia-entersalud/totem-full/temper5.jpg"  class="d-block w-100" alt="Producto-tres">
+          <img src="Public/multimedia-entersalud/totem-full/temper5.webp"  class="d-block w-100" alt="Producto-tres">
           <div class="carousel-caption d-none d-md-block">
             <h5>Totem Full</h5>
-            <p>Dispenser automatico con sensor de temperatura y barrera de ingreso</p>
+            <p>Dispenser automático con sensor de temperatura y barrera de ingreso</p>
           </div>
         </div>
       </div>
@@ -79,24 +94,24 @@
       <section class="container">
       <div class="card-group">
         <div class="card">
-          <img src="Public/multimedia-entersalud/totem-full/temper2.jpg" class="card-img-top" alt="producto uno">
+          <img src="Public/multimedia-entersalud/totem-full/temper2.webp" class="card-img-top" alt="producto uno">
           <div class="card-body">
             <h5 class="card-title">Totem Full</h5>
-            <p class="card-text"> Sanitizante automatico de manos con sensor de temperatura y barrera de ingreso</p>
+            <p class="card-text"> Sanitizante automático de manos con sensor de temperatura y barrera de ingreso</p>
           </div>
         </div>
         <div class="card">
-          <img src="Public/multimedia-entersalud/totem-infantil/wha1.jpeg" class="card-img-top" alt="producto dos">
+          <img src="Public/multimedia-entersalud/totem-infantil/wha1.webp" class="card-img-top" alt="producto dos">
           <div class="card-body">
             <h5 class="card-title">Totem Infantil</h5>
-            <p class="card-text">Totem sanitizante de manos automatico para los mas pequenos</p>
+            <p class="card-text">Totem sanitizante de manos automático para los más pequeños</p>
           </div>
         </div>
         <div class="card">
-          <img src="Public/multimedia-entersalud/totem-clasico/totem-clasico1.png" class="card-img-top" alt="producto tres">
+          <img src="Public/multimedia-entersalud/totem-clasico/totem-clasico1.webp" class="card-img-top" alt="producto tres">
           <div class="card-body">
-            <h5 class="card-title">Totem Clasico</h5>
-            <p class="card-text">Totem sanitizante de manos automatico. Sensor de movimiento</p>
+            <h5 class="card-title">Totem Clásico</h5>
+            <p class="card-text">Totem sanitizante de manos automático. Sensor de movimiento</p>
           </div>
         </div>
       </div>
@@ -104,9 +119,9 @@
     <section class="section-tres" class="container">
     <div class="videos-index">
       <ul class="videos">
-        <li><h3>Totem sanitizantes automaticos con sensor de temperatura</h3>
-            <p>Somos especialistas en la fabricacion de Totem sanitizantes, que se adaptan a tus necesidades.</p>
-           <p> Completamente automaticos e independientes.</p>
+        <li><h3>Totem sanitizantes automáticos con sensor de temperatura</h3>
+            <p>Somos especialistas en la fabricación de Totem sanitizantes, que se adaptan a tus necesidades.</p>
+           <p> Completamente automáticos e independientes.</p>
             <video width="90%" height="90%";
             src="Public/multimedia-entersalud/videos/video-1628120455.mp4" type="video1/mp4" controls
             autoplay loop> 
@@ -119,16 +134,19 @@
   <!-- menu del footer -->
 <footer>
   <div id="footer" class="container-fluid"> 
-      <nav class="nav-footer " class="container">
-      <ul> 
-      <li><a href="paginas/productos.html">Productos</a></li>
-        <li><a href="paginas/nosotros.html">Nosotros</a></li>
-        <li><a href="paginas/clientes.html">Clientes</a></li>
-        <li><a href="paginas/contacto.html">Contacto</a></li>
-        <li><a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="Public/multimedia-entersalud/redes/icono-facebook.png" alt="facebook" class="redes"></a></li>
-          <li><a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="Public/multimedia-entersalud/redes/icono-ig.png" alt="instagram" class="redes"></a></li>
-      </ul>
-    </nav>
+      <div class="footer__contacto-footer">
+        <h5>Enter Salud</h5>
+        <h6>Mar del Plata</h6>
+        <h6>Mitre 1695 Ofina 3</h6>
+      </div>
+      <div class="footer__contacto-datos">
+        <h5>Telefono: 2234695885</h5>
+        <h5>info@entersalud.com</h5>
+      </div>
+      <div class="footer__div-redes">
+      <a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="Public/multimedia-entersalud/redes/icono-facebook.webp" alt="facebook" class="footer__redes"></a>
+      <a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="Public/multimedia-entersalud/redes/icono-ig.webp" alt="instagram" class="footer__redes"></a>
+    </div>   
   </div>
 </footer>
 <!-- javascrip -->

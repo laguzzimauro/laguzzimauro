@@ -3,21 +3,25 @@
 main{
     margin-bottom:20px ;
     .seccion-uno-clientes{
+        background-image:url('../Public/multimedia-entersalud/totem-full/temper6.webp');
+        background-size:cover;
         margin-top: 20px;
-        width: 100% vw;
-        background-color: $coloroctavo;
+        width: 100% ;
         display: grid;
         grid-template-areas:
-        "nuestros-clientes nuestros-clientes nuestros-clientes nuestros-clientes"
-        "cliente-1 cliente-2  cliente-3 cliente-4" ;
+        "nuestros-clientes" 
+        "nuestros-clientes"
+        "cliente-1"
+        "cliente-2 "
+        "cliente-3"
+        "cliente-4" ;
         gap: 4rem;
         grid-column: auto;
         grid-row: auto;
         justify-content: center;
         text-align: center;
         font-size: 16px;
-        background-image:url('../Public/multimedia-entersalud/totem-full/temper6.jpg');
-        background-size:cover;
+       
 
         .seccion-uno-clientes__nuestros-clientes{
             grid-area: nuestros-clientes;

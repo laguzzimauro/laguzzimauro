@@ -1,41 +1,36 @@
 /*ESTILO DE FOOTER*/
  /*ESTILO DE FOOTER*/
 
-#footer{
+footer{
         width: 100%;
-        height: 70px;
-        background-color:$colorprincipal;
-        .nav-footer{
-            width: 100%;
-            height: 70px; 
-            display: flex;
-            align-items: center;
-            background-color: $colorprincipal;
-                ul{
-                    width: 100%;
-                    padding: 0px 60px;
-                    display: flex;  
-                    justify-content: space-between;   
-                    background-color: $colorprincipal;            
-                    li{ 
-                       display: inline;
-                       list-style-type: none;
-                       align-items: center;
-                       a{
-                        text-decoration: none;
-                        padding: 3px;
-                        color:$colorwhite;
-                        font-size: 16px;
-                        font-family:'EB Garamond';   
-                        background-color:$colorprincipal;
-                        font-style: bold;
-                        &:hover{
-                        transform: scale(1.2);
-                        background-color: $colorhover;
-                        }
-                        
-                        }
-                    }           
-                }
-        }
-} 
+        height: auto;
+        background-color:$colorprincipal; }
+#footer{        
+    display: flex;   
+    flex-wrap: nowrap;     
+    justify-content: space-around; 
+    align-items: center;
+   .footer__contacto-footer{
+    font-size: 24px;
+    color: $colorwhite;
+    text-align: center;
+    margin-top: 5px;
+    }
+    .footer__contacto-datos{
+    font-size: 24px;
+    color:$colorwhite;
+    }
+    .footer__div-redes{
+    width: auto;
+    .footer__redes {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px #fffcfc;
+    transition: .3s ease-in-out;
+    &:hover{
+        transform: scale(1.2);
+            }
+    }
+}
+}

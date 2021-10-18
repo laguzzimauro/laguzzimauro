@@ -76,3 +76,32 @@
       }
 }
 
+
+@media only screen and (max-width:780px){
+   .nosotros{
+      grid-template-areas:
+      "imagen nosotros nosotros"
+      "imagen nosotros-clientes nosotros-clientes-1"
+      "imagen nosotros-clientes-2 nosotros-clientes-3";
+      
+      .nosotros__imagen-nosotros{
+        margin:auto;
+        width: 30%;
+        height: auto;
+      }
+  }
+}
+@media only screen and (max-width: 360px) {
+   .nosotros{
+       grid-template-areas:
+       "nosotros nosotros"
+        "nosotros-clientes nosotros-clientes-1"
+        "nosotros-clientes-2 nosotros-clientes-3"
+        "imagen imagen"
+       ;
+       .nosotros__imagen-nosotros{
+         margin:auto;
+         margin-bottom: 10px;
+       }
+   }
+}

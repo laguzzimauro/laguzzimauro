@@ -14,38 +14,52 @@
 </head>
 <body>
      <!-- menu de navegacion -->
-     <header class="header" class= "container-fluid">
-      <nav>
-        <picture><img  class="header__logo-entersalud" src="../Public/multimedia-entersalud/logo.png" alt="logo de la empresa"></picture>
-        <ul id="menu"> 
-          <li class="menu__menu-individual"><a href="../index.html">Inicio</a></li>
-          <li class="menu__menu-individual"><a href="productos.html">Productos</a>
-            <ul class="menu__menu-individual__submenu-productos"> 
-              <li><a href="productos.html"> Totem clasico</a></li>
-              <li><a href="productos.html"> Totem full</a></li>
-              <li><a href="productos.html"> Totem infantil</a></li>
-              <li><a href="productos.html"> Totem temperatura</a></li>
+     <header id="cabecera">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id= "navegacion">
+        <div class="container-fluid" id="head">
+          <a class="navbar-brand" href="../index.html"><picture><img  class="header__logo-entersalud" src="../Public/multimedia-entersalud/logo.png" alt="logo de la empresa"></picture></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+              <li class= "nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" id="menu__menu-individual" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu"  aria-labelledby="navbarDropdown" id="desplegable">
+                  <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="productos.html">Totem Clasico</a></li>
+                  <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="productos.html">Totem Full</a></li>
+                  <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="productos.html">Totem Infantil</a></li>
+                  <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="productos.html">Totem Temperatura</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                id="menu__menu-individual" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu__menu-individual" href="clientes.html">CLIENTES</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" id="menu__menu-individual" href="contacto.html">CONTACTO</a>
+              </li>
             </ul>
-          </li>
-          <li class="menu__menu-individual"><a href="nosotros.html">Nosotros</a></li>
-          <li class="menu__menu-individual"><a href="clientes.html">Clientes</a></li>
-          <li class="menu__menu-individual"><a href="contacto.html">Contacto</a></li>
-          <li class="menu__menu-individual" ><a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="../Public/multimedia-entersalud/redes/icono-facebook.png" alt="facebook" class="redes"></a></li>
-          <li class="menu__menu-individual"><a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="../Public/multimedia-entersalud/redes/icono-ig.png" alt="instagram" class="redes"></a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="container">
         <h2 class= "nosotros">Contactanos y sacate las dudas</h2>
         <article>
-            Si queres saber mas sobre nosotros y ampliar la informacion, contactanos que nos comunicaremos a la brevedad
+            Si queres saber más sobre nosotros y ampliar la información, contactanos que nos comunicaremos a la brevedad
         </article>
      <form action="" method="post">
-         <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" id="">
-         <input type="number" name="Dni" placeholder="Dni" id="">
+         <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" id="nombre y apellido">
+         <input type="number" name="Dni" placeholder="Dni" id="Dni">
          <br>
-         <input type="tel" name="Telefono"placeholder="Telefono" id="">
-         <input type="email" name="Email"placeholder="Email" id="">
+         <input type="tel" name="Telefono"placeholder="Telefono" id="telefono">
+         <input type="email" name="Email"placeholder="Email" id="email">
          <br>
          <h4>¿Como nos conociste?</h4>
          <input type="radio" name="Como nos conociste" id="Facebook">
@@ -58,7 +72,7 @@
          <label for="Web">Web</label><br>
          <input type="radio" name="Como nos conociste" id="Boca en boca">
          <label for="Boca en boca">Boca en boca</label><br>
-         <textarea name="" id="" cols="30" rows="10"placeholder="Dejanos tus inquietudes y las resolveremos a la brevedad"></textarea>
+         <textarea name="" id="inquietudes" cols="30" rows="10"placeholder="Dejanos tus inquietudes y las resolveremos a la brevedad"></textarea>
          <br>
          <label for="checkbok">"Acepto las bases y condiciones"</label>
          <input type="checkbox" name="bases y condiciones" id="Acepto las bases y condiciones">
@@ -69,19 +83,24 @@
      </form>
     </main>
        <!-- menu del footer -->
-<footer>
-  <div id="footer" class="container-fluid">
-     <nav class="nav-footer">
-      <ul> 
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="clientes.html">Clientes</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="../Public/multimedia-entersalud/redes/icono-facebook.png" alt="facebook" class="redes"></a></li>
-        <li><a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="../Public/multimedia-entersalud/redes/icono-ig.png" alt="instagram" class="redes"></a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
+       <footer>
+        <div id="footer" class="container-fluid"> 
+            <div class="footer__contacto-footer">
+              <h5>Enter Salud</h5>
+              <h6>Mar del Plata</h6>
+              <h6>Mitre 1695 Ofina 3</h6>
+            </div>
+            <div class="footer__contacto-datos">
+              <h5>Telefono: 2234695885</h5>
+              <h5>info@entersalud.com</h5>
+            </div>
+            <div class="footer__div-redes">
+            <a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="../Public/multimedia-entersalud/redes/icono-facebook.webp" alt="facebook" class="footer__redes"></a>
+            <a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="../Public/multimedia-entersalud/redes/icono-ig.webp" alt="instagram" class="footer__redes"></a>
+          </div>   
+        </div>
+      </footer>
+      <!-- javascrip -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

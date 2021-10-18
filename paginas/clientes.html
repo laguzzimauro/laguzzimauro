@@ -14,25 +14,39 @@
 </head>
 <body>
      <!-- menu de navegacion -->
-     <header class="header" class= "container-fluid">
-      <nav>
-        <picture><img  class="header__logo-entersalud" src="../Public/multimedia-entersalud/logo.png" alt="logo de la empresa"></picture>
-        <ul id="menu"> 
-          <li class="menu__menu-individual"><a href="../index.html">Inicio</a></li>
-          <li class="menu__menu-individual"><a href="productos.html">Productos</a>
-            <ul class="menu__menu-individual__submenu-productos"> 
-              <li><a href="productos.html"> Totem clasico</a></li>
-              <li><a href="productos.html"> Totem full</a></li>
-              <li><a href="productos.html"> Totem infantil</a></li>
-              <li><a href="productos.html"> Totem temperatura</a></li>
+     <header id="cabecera">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id= "navegacion">
+        <div class="container-fluid" id="head">
+          <a class="navbar-brand" href="../index.html"><picture><img  class="header__logo-entersalud" src="../Public/multimedia-entersalud/logo.png" alt="logo de la empresa"></picture></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+              <li class= "nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" id="menu__menu-individual" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu"  aria-labelledby="navbarDropdown" id="desplegable">
+                  <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="productos.html">Totem Clasico</a></li>
+                  <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="productos.html">Totem Full</a></li>
+                  <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="productos.html">Totem Infantil</a></li>
+                  <li><a class="dropdown-item" id="menu__menu-individual__submenu-productos" href="productos.html">Totem Temperatura</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                id="menu__menu-individual" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="menu__menu-individual" href="clientes.html">CLIENTES</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" id="menu__menu-individual" href="contacto.html">CONTACTO</a>
+              </li>
             </ul>
-          </li>
-          <li class="menu__menu-individual"><a href="nosotros.html">Nosotros</a></li>
-          <li class="menu__menu-individual"><a href="clientes.html">Clientes</a></li>
-          <li class="menu__menu-individual"><a href="contacto.html">Contacto</a></li>
-          <li class="menu__menu-individual" ><a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="../Public/multimedia-entersalud/redes/icono-facebook.png" alt="facebook" class="redes"></a></li>
-          <li class="menu__menu-individual"><a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="../Public/multimedia-entersalud/redes/icono-ig.png" alt="instagram" class="redes"></a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="container">
@@ -40,44 +54,49 @@
           <div class= "seccion-uno-clientes__nuestros-clientes">
             <h2>Nuestros clientes</h2>
             <h3>Quienes han confiado en nosotros y nos recomiendan día a día</h3>
-            <p>Brindamos sanitizantes automaticos de manos ideal para utilizar en los accesos, areas de flujo continuo, empresas,negocios, fabricas, edificios y hospitales. Estas empresas confiaron en nosotros y dejaron en nuestras manos el cuidado de sus ingresos.</p>
+            <p>Brindamos sanitizantes automáticos de manos ideal para utilizar en los accesos, areas de flujo continuo, empresas,negocios, fabricas, edificios y hospitales. Estas empresas confiaron en nosotros y dejaron en nuestras manos el cuidado de sus ingresos.</p>
           </div>
           <div class="seccion-uno-clientes__clientes-1">
-            <img src="../Public/multimedia-entersalud/locales/local6.jpg" alt="Imagen de clientes">
+            <img src="../Public/multimedia-entersalud/locales/local6.webp" alt="Imagen de clientes">
             <h4>Hotel Ideal</h4>
-            <p>Breve descripcion del producto comprado y comentarios Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, autem cum. Ipsam suscipit reprehenderit quibusdam, dolorem alias quisquam, ratione amet ad minus culpa quasi aut, voluptatem molestias? Necessitatibus, laboriosam nihil.</p>
+            <p>Gracias al Totem sanitizante la entrada a nuestro hotel se encuentra protegida. La verdad nos dio buenos resultados. Es un sistema fácil y práctico de aplicar.</p>
           </div>
           <div class="seccion-uno-clientes__clientes-2">
-            <img src="../Public/multimedia-entersalud/locales/local5.jpg" alt="Imagen de clientes">
+            <img src="../Public/multimedia-entersalud/locales/local5.webp" alt="Imagen de clientes">
             <h4>Edificio Tatomar Tercero </h4>
-            <p>Breve descripcion del producto comprado y comentarios</p>
+            <p> Nos ayudo a controlar los accesos al edificio manteniendo la seguridad de todos los habitantes. Sanitizamos todos los espacios de uso común.</p>
           </div>
           <div class="seccion-uno-clientes__clientes-3">
-            <img src="../Public/multimedia-entersalud/locales/local4.jpg" alt="Imagen de clientes">
+            <img src="../Public/multimedia-entersalud/locales/local4.webp" alt="Imagen de clientes">
             <h4>Centro Oftalmológico Mar del Plata
             </h4>
-            <p>Breve descripcion del producto comprado y comentarios</p>
+            <p>Utilizamos los Totem para sanitizar a todos los pacientes de nuestro centro, controlando la temperatura y la aplicación de alcohol, logrando un control eficiente.</p>
           </div>
           <div  class="seccion-uno-clientes__clientes-4">
-            <img src="../Public/multimedia-entersalud/locales/local3.jpg" alt="Imagen de clientes">
+            <img src="../Public/multimedia-entersalud/locales/local3.webp" alt="Imagen de clientes">
             <h4>Asociación Mutual El Principito</h4>
-            <p>Breve descripcion del producto comprado y comentarios</p>
+            <p>Implementamos el uso de una cabina sanitizante para todos nuestro socios, haciendo incapie en la salud de nuestra gente.</p>
           </div>
     </main>
         <!-- menu del footer -->
-<footer>
-  <div id="footer" class="container-fluid">
-     <nav class="nav-footer">
-      <ul> 
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="clientes.html">Clientes</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="../Public/multimedia-entersalud/redes/icono-facebook.png" alt="facebook" class="redes"></a></li>
-        <li><a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="../Public/multimedia-entersalud/redes/icono-ig.png" alt="instagram" class="redes"></a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
+        <footer>
+          <div id="footer" class="container-fluid"> 
+              <div class="footer__contacto-footer">
+                <h5>Enter Salud</h5>
+                <h6>Mar del Plata</h6>
+                <h6>Mitre 1695 Ofina 3</h6>
+              </div>
+              <div class="footer__contacto-datos">
+                <h5>Telefono: 2234695885</h5>
+                <h5>info@entersalud.com</h5>
+              </div>
+              <div class="footer__div-redes">
+              <a href="https://www.facebook.com/entersaludmardelplatasanitizantes/"><img src="../Public/multimedia-entersalud/redes/icono-facebook.webp" alt="facebook" class="footer__redes"></a>
+              <a href="https://www.instagram.com/entersaludmdp/?fbclid=IwAR3-RZmznAEaOaBBl8VslPSVYjtmMq65s1IzcfFCCY4D-pcv-5M18cqbx-M"><img src="../Public/multimedia-entersalud/redes/icono-ig.webp" alt="instagram" class="footer__redes"></a>
+            </div>   
+          </div>
+        </footer>
+        <!-- javascrip -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
