@@ -404,20 +404,20 @@ main {
     background-color: #2892D7;
     margin-top: 20px; }
     .section-uno .titulos-seccion-uno h2 {
-      font-size: 16px;
+      font-size: 18px;
       color: ivory;
       font-style: bold; }
     .section-uno .titulos-seccion-uno h3 {
-      font-size: 14px;
+      font-size: 16px;
       color: cornsilk;
       font-style: bold; }
     .section-uno .titulos-seccion-uno p {
-      font-size: 14px;
+      font-size: 16px;
       color: #F2F4FF; }
     .section-uno .titulos-seccion-uno ul {
       text-decoration: none;
       list-style-type: none;
-      font-size: 14px;
+      font-size: 16px;
       color: #504f4f;
       background-color: rgba(255, 235, 205, 0.747);
       margin-top: 20px; }
@@ -433,12 +433,12 @@ main {
   .section-dos .col .card .card-body {
     background-color: #2892D7; }
     .section-dos .col .card .card-body .card-title {
-      font-size: 14px;
+      font-size: 18px;
       font-style: bold;
       text-align: center;
       color: ivory; }
     .section-dos .col .card .card-body .card-text {
-      font-size: 12px;
+      font-size: 14px;
       font-style: bold;
       text-align: center;
       color: cornsilk; }

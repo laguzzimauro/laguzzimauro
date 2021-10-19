@@ -9,28 +9,28 @@
     
     }
     .titulos-seccion-uno{
-        text-align: center;
+        text-align:center;
         font-style: bold;
         background-color: $colorseptimo;
         margin-top: 20px;
         h2{
-            font-size:16px ;
+            font-size:18px ;
             color: $colorterciario;
             font-style: bold;
         }
         h3{
-            font-size:14px ;
+            font-size:16px ;
             color:$colorboton;
             font-style: bold;
         }
         p{
-            font-size:14px ;
+            font-size:16px ;
             color:$colorsecundario;
         }
         ul{
             text-decoration: none;
             list-style-type:none;
-            font-size: 14px;
+            font-size: 16px;
             color:$colorparrafo;
             background-color: rgba(255, 235, 205, 0.747); 
             margin-top: 20px;
@@ -52,13 +52,13 @@
             .card-body{
                 background-color:$colorseptimo;
                 .card-title{
-                    font-size: 14px;
+                    font-size: 18px;
                     font-style: bold;
                     text-align: center;
                     color: $colorterciario;
                 }
                 .card-text{
-                    font-size: 12px;
+                    font-size: 14px;
                     font-style: bold;
                     text-align: center;
                     color:$colorboton;
